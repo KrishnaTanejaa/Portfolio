@@ -47,6 +47,21 @@
             object-fit: cover;
         }
     }
+
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+
+        grid-template-columns: 1fr;
+    }
+
+    main#about {
+        padding-left: 42px;
+    }
 }
 
 //Smartphones
