@@ -9,6 +9,7 @@
   "author": "Krishna Taneja",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "node-sass": "^9.0.0"
   }
 }

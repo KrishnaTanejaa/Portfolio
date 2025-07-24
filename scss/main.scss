@@ -171,10 +171,10 @@ main{
 }
 
 // Button Styles
-.btn {
+.para {
     display: block;
     padding: 0.5rem 1rem;
-    border: 0;
+    border: 2px solid #fff;
     margin-bottom: 0.3rem;
     &:hover {
         background: $secondary-color;
@@ -182,17 +182,17 @@ main{
     }
 }
 
-.btn-dark {
-    @extend .btn;
-    background: darken($primary-color, 50);
-    color: #fff;
-}
+// .btn-dark {
+//     @extend .btn;
+//     background: darken($primary-color, 50);
+//     color: #fff;
+// }
 
-.btn-light {
-    @extend .btn;
-    background: lighten($primary-color, 50);
-    color: #333;
-}
+// .btn-light {
+//     @extend .btn;
+//     background: lighten($primary-color, 50);
+//     color: #333;
+// }
 
 #main-footer {
     text-align: center;

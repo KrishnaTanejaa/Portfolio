@@ -216,22 +216,14 @@ main {
       .boxes div:hover span {
         color: #000; }
 
-.btn, .btn-dark, .btn-light {
+.para {
   display: block;
   padding: 0.5rem 1rem;
-  border: 0;
+  border: 2px solid #fff;
   margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
+  .para:hover {
     background: #eece1a;
     color: #000; }
-
-.btn-dark {
-  background: black;
-  color: #fff; }
-
-.btn-light {
-  background: #c4c4c4;
-  color: #333; }
 
 #main-footer {
   text-align: center;
