@@ -1,64 +1,61 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
-$show-home-image: true;
-$home-image: url(../img/background.jpg);
-$background-opacity: 0.9;
+$primary-color: #0d0d1a;
+$secondary-color: #00f2ff;
+$accent-color: #ff007f;
+$text-color: #f4f4f4;
 
-@mixin easeOut{
-    transition: all 0.5s ease-out;
+$glass-bg: rgba(255, 255, 255, 0.05);
+$glass-border: rgba(255, 255, 255, 0.1);
+$glass-blur: blur(12px);
+
+@mixin easeOut {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-@mixin background {
-    @if $show-home-image {
-        &#bg-img {
-            background: $home-image;
-            background-attachment: fixed;
-            background-size: cover;
+@mixin glass-effect {
+  background: $glass-bg;
+  backdrop-filter: $glass-blur;
+  -webkit-backdrop-filter: $glass-blur;
+  border: 1px solid $glass-border;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 15px;
+}
 
-            &:after{
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                z-index: -1;
-                width: 100%;
-                height: 100%;
-                background: rgba($primary-color, $background-opacity);
-            }
-        }
-    }
+@mixin entrance-animation($delay: 0s) {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: $delay;
+  opacity: 0;
 }
 
 // Set Text color
 @function set-text-color($color) {
-    @if (lightness($color) > 40) {
-        @return #000;
-    } @else {
-        @return #fff;
-    }
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
 }
 
-//Media query mixin
+// Media query mixins
 @mixin mediaSm {
-    @media screen and (max-width: 500px){
-        @content;
-    }
+  @media screen and (max-width: 500px) {
+    @content;
+  }
 }
 
 @mixin mediaMd {
-    @media screen and (max-width: 768px){
-        @content;
-    }
+  @media screen and (max-width: 768px) {
+    @content;
+  }
 }
 
 @mixin mediaLg {
-    @media screen and (min-width: 769px) and (max-width: 1170px){
-        @content;
-    }
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
 }
 
 @mixin mediaXl {
-    @media screen and (min-width: 1171px){
-        @content;
-    }
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
 }
