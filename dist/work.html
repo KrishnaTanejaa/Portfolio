@@ -1,131 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://kit.fontawesome.com/d9d82d3413.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects — Krishna Taneja. Projects in Software Development, AI/ML, and Hardware.">
+  <title>Projects — Krishna Taneja</title>
 
-
-    <title>View My Work</title>
+  <!-- Stylesheets & Fonts -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d9d82d3413.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <!-- Background Blobs -->
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
+  <div class="eng-grid-bg" aria-hidden="true"></div>
 
-    <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" aria-label="Krishna Taneja Home">
+        <span class="brand-badge">KT</span>
+        <span class="brand-text">
+          <span class="brand-name">Krishna Taneja</span>
+          <span class="brand-sub">Engineering Portfolio</span>
+        </span>
+      </a>
 
-        <nav class="menu">
-            <div class="menu-branding">
-                <div class="portrait"></div>
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About Me</a>
-                </li>
-                <li class="nav-item current">
-                    <a href="work.html" class="nav-link">My Work</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">How to reach me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main id="work">
-        <div class="glass-panel" style="padding: 2rem;">
-            <h1 class="lg-heading">
-                My <span class="text-secondary"> Work</span>
-            </h1>
-            <h2 class="sm-heading">
-                Showcasing Innovation & Design
-            </h2>
-        </div>
-        <div class="projects">
-            <div class="item">
-                <a href="#!">
-                    <img src="img/projects/project1.jpg" alt="Project">
-                </a>
-                <div class="btn-group">
-                    <a href="#!" class="btn-light">
-                        <i class="fas fa-eye"></i> Demo
-                    </a>
-                    <a href="#!" class="btn-dark">
-                        <i class="fab fa-github"></i> Github
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <a href="#!">
-                    <img src="img/projects/project2.jpg" alt="Project">
-                </a>
-                <div class="btn-group">
-                    <a href="#!" class="btn-light">
-                        <i class="fas fa-eye"></i> Demo
-                    </a>
-                    <a href="#!" class="btn-dark">
-                        <i class="fab fa-github"></i> Github
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <a href="#!">
-                    <img src="img/projects/project3.jpg" alt="Project">
-                </a>
-                <div class="btn-group">
-                    <a href="#!" class="btn-light">
-                        <i class="fas fa-eye"></i> Demo
-                    </a>
-                    <a href="#!" class="btn-dark">
-                        <i class="fab fa-github"></i> Github
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <a href="#!">
-                    <img src="img/projects/project4.jpg" alt="Project">
-                </a>
-                <div class="btn-group">
-                    <a href="#!" class="btn-light">
-                        <i class="fas fa-eye"></i> Demo
-                    </a>
-                    <a href="#!" class="btn-dark">
-                        <i class="fab fa-github"></i> Github
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <a href="#!">
-                    <img src="img/projects/project5.jpg" alt="Project">
-                </a>
-                <div class="btn-group">
-                    <a href="#!" class="btn-light">
-                        <i class="fas fa-eye"></i> Demo
-                    </a>
-                    <a href="#!" class="btn-dark">
-                        <i class="fab fa-github"></i> Github
-                    </a>
-                </div>
-            </div>
-        </div>
-    </main>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html#hero">Overview</a></li>
+          <li class="nav-item"><a href="index.html#featured-projects">Featured</a></li>
+          <li class="nav-item"><a href="work.html" class="active">All Projects</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="index.html#skills">Skills</a></li>
+          <li class="nav-item"><a href="index.html#education">Education</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
 
-    <footer id="main-footer">
-        Copyright &copy; 2026
-    </footer>
-    <script src="js/main.js"></script>
+      <div class="header-actions">
+        <a href="contact.html" class="btn-contact-header">
+          <i class="fas fa-envelope"></i> Contact
+        </a>
+        <button class="mobile-toggle" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html#hero">Overview</a></li>
+      <li><a href="work.html" class="active">All Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="index.html#skills">Technical Skills</a></li>
+      <li><a href="index.html#education">Education & Experience</a></li>
+      <li><a href="contact.html">Contact Information</a></li>
+    </ul>
+    <div class="mobile-contact-bar">
+      <a href="mailto:krishnataneja26@gmail.com" class="btn btn-primary" style="width:100%; justify-content:center;">
+        <i class="fas fa-envelope"></i> Email Krishna
+      </a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <div class="section-container" style="padding-top: 3.5rem;">
+      <div class="section-header">
+        <span class="section-eyebrow">Projects</span>
+        <h1 class="section-title">My Projects</h1>
+        <p class="section-subtitle">
+          Projects I built across software, AI/ML, and hardware, shown in priority order.
+        </p>
+      </div>
+
+      <!-- Leading Priority: Lab Management System -->
+      <div class="featured-showcase" style="margin-bottom: 3.5rem;">
+        <article class="flagship-project-card" id="project-lab-management">
+          <div class="flagship-header">
+            <div class="flagship-title-block">
+              <div class="project-order-tag">PROJECT 01 &bull; MAIN FEATURED PROJECT</div>
+              <h2 class="flagship-title">Lab Management System</h2>
+            </div>
+            <span class="status-pill status-deploying">
+              <span class="status-dot"></span>
+              Being deployed in the college lab
+            </span>
+          </div>
+
+          <div class="flagship-body">
+            <div class="flagship-details">
+              <div class="detail-block">
+                <h4>What the System Does</h4>
+                <p>
+                  A web app built to manage our college laboratory. It helps lab assistants and teachers keep track of which student is sitting at which computer, who borrowed which hardware component (like Arduino boards, sensors, or multimeters), and log broken equipment so it gets repaired.
+                </p>
+              </div>
+
+              <div class="detail-block">
+                <h4>Features I Built</h4>
+                <ul class="feature-bullets">
+                  <li><i class="fas fa-check-circle"></i> <span><strong>Student Attendance & Desks:</strong> Records student attendance and assigns them to specific computer desks in the lab.</span></li>
+                  <li><i class="fas fa-check-circle"></i> <span><strong>Hardware Inventory:</strong> Tracks who checked out components (like microcontrollers, test probes, and meters) and when they return them.</span></li>
+                  <li><i class="fas fa-check-circle"></i> <span><strong>User Roles:</strong> Separate permissions for students, lab assistants, and teachers.</span></li>
+                  <li><i class="fas fa-check-circle"></i> <span><strong>Report Broken Equipment:</strong> Lets students and staff flag broken computers or equipment so they can be fixed.</span></li>
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h4>Technologies Used</h4>
+                <div class="tech-tag-group">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">SQL Database</span>
+                  <span class="tech-tag">REST APIs</span>
+                  <span class="tech-tag">User Authentication</span>
+                  <span class="tech-tag">HTML / SCSS / JS</span>
+                  <span class="tech-tag">College Lab Network</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flagship-visuals">
+              <div class="evolution-container">
+                <div class="evolution-title">
+                  <i class="fas fa-code-branch"></i> How the Project Grew
+                </div>
+                <div class="evolution-stages">
+                  <div class="stage-card stage-early">
+                    <div class="stage-label">EARLIER VERSION</div>
+                    <p>
+                      Started as a simple desktop script and basic spreadsheet-style table to keep an inventory list on a single computer.
+                    </p>
+                  </div>
+                  <div class="stage-card stage-present">
+                    <div class="stage-label">PRESENT VERSION</div>
+                    <p>
+                      Upgraded into a full web app with user logins, role permissions, a shared database, and network setup for our college lab.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="architecture-diagram-card">
+                <div class="diagram-header">
+                  <span>How the System Works</span>
+                  <span class="tech-tag">Live Testing</span>
+                </div>
+                <svg viewBox="0 0 460 170" width="100%" height="auto" style="border-radius:6px; background:#070a10; border:1px solid #1a2436;" aria-label="Lab Management System Architecture">
+                  <rect x="20" y="25" width="100" height="42" rx="5" fill="#0f172a" stroke="#00e5ff" stroke-width="1.2"/>
+                  <text x="70" y="50" fill="#f8fafc" font-size="10" font-family="'JetBrains Mono', monospace" text-anchor="middle" font-weight="600">Web Interface</text>
+                  
+                  <path d="M 120 46 L 160 46" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="3,3" />
+                  
+                  <rect x="160" y="25" width="130" height="42" rx="5" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+                  <text x="225" y="45" fill="#f8fafc" font-size="10" font-family="'JetBrains Mono', monospace" text-anchor="middle" font-weight="600">Backend Logic</text>
+                  <text x="225" y="58" fill="#94a3b8" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle">Logins & Roles</text>
+                  
+                  <path d="M 290 46 L 330 46" stroke="#38bdf8" stroke-width="1.5" />
+                  
+                  <rect x="330" y="25" width="110" height="42" rx="5" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+                  <text x="385" y="45" fill="#f8fafc" font-size="10" font-family="'JetBrains Mono', monospace" text-anchor="middle" font-weight="600">SQL Database</text>
+                  <text x="385" y="58" fill="#10b981" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle">Records & Logs</text>
+
+                  <rect x="20" y="100" width="420" height="48" rx="5" fill="#0b1220" stroke="#1e293b" stroke-width="1"/>
+                  <circle cx="45" cy="124" r="5" fill="#10b981" />
+                  <text x="60" y="128" fill="#f8fafc" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="600">College Lab Network Environment</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="flagship-footer">
+            <span style="font-size:0.85rem; color:#94a3b8;">
+              <i class="fas fa-university" style="color:#00e5ff; margin-right:0.4rem;"></i>
+              Currently being tested and deployed in our college laboratory
+            </span>
+            <button type="button" class="btn btn-outline" data-project-modal="lab-management">
+              <i class="fas fa-file-alt"></i> View Full Project Details
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 2 & 3 Duo -->
+        <div class="featured-grid-duo">
+          <!-- Project 2: Megatron -->
+          <article class="project-card" id="project-megatron">
+            <div class="card-header-bar">
+              <div>
+                <span class="project-index">PROJECT 02 // AUTOMATION</span>
+                <h3 class="project-card-title">Megatron</h3>
+              </div>
+              <span class="status-pill status-prep">
+                <span class="status-dot"></span>
+                Being prepared for college deployment
+              </span>
+            </div>
+
+            <div class="card-body">
+              <p class="project-desc">
+                An automation tool built to run background tasks and monitor computer systems in our college labs. It runs scheduled maintenance scripts and checks if background programs are running properly, logging errors automatically to make diagnosing issues straightforward.
+              </p>
+
+              <div class="tech-tag-group">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Automation</span>
+                <span class="tech-tag">Async Tasks</span>
+                <span class="tech-tag">System Monitoring</span>
+                <span class="tech-tag">Error Logging</span>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <span>Testing &bull; College Deployment</span>
+              <button type="button" class="btn btn-outline" data-project-modal="megatron">
+                <i class="fas fa-info-circle"></i> Project Details
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3: Timetable Scheduler Using DFS -->
+          <article class="project-card" id="project-timetable-scheduler">
+            <div class="card-header-bar">
+              <div>
+                <span class="project-index">PROJECT 03 // AI / ML PROJECT</span>
+                <h3 class="project-card-title">Timetable Scheduler Using DFS</h3>
+              </div>
+              <span class="status-pill status-planned">
+                <span class="status-dot"></span>
+                College deployment being planned
+              </span>
+            </div>
+
+            <div class="card-body">
+              <p class="project-desc">
+                My AI/ML subject project that uses Depth-First Search (DFS) with backtracking to generate clash-free college class timetables. It assigns classes step by step, and if a clash occurs with teacher schedules or room sizes, it backtracks and tries another slot until a valid timetable is found.
+              </p>
+
+              <div class="tech-tag-group">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Depth-First Search (DFS)</span>
+                <span class="tech-tag">Backtracking</span>
+                <span class="tech-tag">Constraint Solving</span>
+                <span class="tech-tag">AI/ML Subject</span>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <span>Academic Subject &bull; Planning Deployment</span>
+              <button type="button" class="btn btn-outline" data-project-modal="timetable-scheduler">
+                <i class="fas fa-info-circle"></i> Algorithm Details
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Additional Projects (4, 5, 6) -->
+      <div class="section-header" style="margin-top:2rem;">
+        <span class="section-eyebrow">More Projects</span>
+        <h2 class="section-title">Additional Engineering Projects</h2>
+      </div>
+
+      <div class="secondary-projects-grid">
+        <!-- Project 4: SPIE / Web Systems -->
+        <article class="compact-project-card" id="project-spie">
+          <div class="compact-header">
+            <span class="compact-number">PROJECT 04</span>
+            <span class="status-pill status-systems">
+              <span class="status-dot"></span>
+              Web Systems
+            </span>
+          </div>
+          <h3 class="compact-title">SPIE / Web Systems</h3>
+          <p class="compact-desc">
+            A web project focused on building clean web pages with reliable backend communication. I built the responsive user interface and connected it to backend endpoints for handling user requests and saving data.
+          </p>
+          <div class="compact-tech">
+            <div class="tech-tag-group">
+              <span class="tech-tag">Web Development</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">SCSS</span>
+              <span class="tech-tag">Backend APIs</span>
+            </div>
+            <button type="button" class="btn btn-outline" style="width:100%; margin-top:0.75rem;" data-project-modal="spie-web-systems">
+              View Details
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 5: Hardware Engineering Projects -->
+        <article class="compact-project-card" id="project-hardware">
+          <div class="compact-header">
+            <span class="compact-number">PROJECT 05</span>
+            <span class="status-pill status-hardware">
+              <span class="status-dot"></span>
+              Hardware & Embedded
+            </span>
+          </div>
+          <h3 class="compact-title">Hardware Engineering Projects</h3>
+          <p class="compact-desc">
+            Hands-on electronics projects using microcontrollers like Arduino and ESP boards. I write firmware in C and C++, wire sensors on breadboards, communicate using UART, I2C, and SPI protocols, and test circuits with multimeters and oscilloscopes.
+          </p>
+          <div class="compact-tech">
+            <div class="tech-tag-group">
+              <span class="tech-tag">Embedded C/C++</span>
+              <span class="tech-tag">Microcontrollers</span>
+              <span class="tech-tag">UART / I2C / SPI</span>
+              <span class="tech-tag">Circuit Wiring</span>
+            </div>
+            <button type="button" class="btn btn-outline" style="width:100%; margin-top:0.75rem;" data-project-modal="hardware-engineering">
+              View Hardware Details
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 6: FlowOps -->
+        <article class="compact-project-card" id="project-flowops">
+          <div class="compact-header">
+            <span class="compact-number">PROJECT 06</span>
+            <span class="status-pill status-dev">
+              <span class="status-dot"></span>
+              In Development
+            </span>
+          </div>
+          <h3 class="compact-title">FlowOps</h3>
+          <p class="compact-desc">
+            An ongoing project to build a step-by-step task runner that automates everyday technical workflows. I built the core runner that executes tasks in order and logs errors; adding multi-computer support and a web dashboard is next.
+          </p>
+          <div class="compact-tech">
+            <div class="tech-tag-group">
+              <span class="tech-tag">Task Runner</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">In Development</span>
+            </div>
+            <button type="button" class="btn btn-outline" style="width:100%; margin-top:0.75rem;" data-project-modal="flowops">
+              View Progress & Roadmap
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">Krishna Taneja &bull; Engineering Portfolio</span>
+        <span class="footer-copy">All projects verified with authentic details.</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Overview</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/KrishnaTanejaa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <button type="button" class="btn-scroll-top" aria-label="Scroll to top of page" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Case Study Modal -->
+  <div class="case-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="case-modal-dialog">
+      <div class="case-modal-header">
+        <div class="modal-title-group">
+          <div class="modal-eyebrow">PROJECT DETAILS</div>
+          <h3 class="modal-title" id="modal-project-title">Project Title</h3>
+          <div class="modal-status-container" style="margin-top:0.4rem;"></div>
+        </div>
+        <button type="button" class="btn-close-modal" aria-label="Close Project Details">&times;</button>
+      </div>
+      <div class="case-modal-body"></div>
+      <div class="case-modal-footer">
+        <span style="font-size:0.8rem; color:#64748b; font-family:'JetBrains Mono', monospace;">
+          Krishna Taneja &bull; Portfolio
+        </span>
+        <button type="button" class="btn btn-secondary btn-modal-close-footer">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-notice" role="status" aria-live="polite">
+    <i class="fas fa-check-circle" style="color:#00e5ff;"></i>
+    <span class="toast-msg">Text copied to clipboard</span>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
-
 </html>

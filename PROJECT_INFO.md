@@ -1,35 +1,30 @@
-# Portfolio Project Overview
+# Portfolio Overview — Krishna Taneja
 
-This is a responsive personal portfolio website designed to showcase professional work, skills, and contact information.
+Personal portfolio website for showcasing software, AI/ML, and hardware engineering projects to companies for internships and engineering roles.
 
 ## Tech Stack
 
-- **HTML5 & CSS3**: Core structure and styling.
-- **Sass (SCSS)**: Used for modular and maintainable CSS.
-- **JavaScript (Vanilla)**: For interactive elements (e.g., menu toggles).
-- **Node-sass**: Compiles SCSS to CSS.
-- **GH-Pages**: For deployment to GitHub Pages.
+- **HTML5 & CSS3**: Clean markup and responsive layouts.
+- **Dart Sass**: SCSS styling with dark engineering theme and teal accents.
+- **JavaScript (Vanilla)**: Navigation drawer, project modals, clipboard copy.
+- **Live-Server**: Development server with live reload.
 
 ## Project Structure
 
-- `dist/`: The "distribution" folder containing the production-ready website.
-  - `index.html`: Home page.
-  - `about.html`: About me section.
-  - `work.html`: Portfolio of projects.
-  - `contact.html`: Contact information.
-  - `css/`: Compiled CSS files.
-  - `img/`: Image assets.
-  - `js/main.js`: Main JavaScript logic.
+- `dist/`: Ready-to-serve website files.
+  - `index.html`: Main portfolio page with all sections.
+  - `work.html`: Dedicated projects showcase.
+  - `about.html`: About me, background, and education.
+  - `contact.html`: Contact links.
+  - `css/main.css`: Compiled CSS stylesheet.
+  - `js/main.js`: Main JavaScript and modal content.
 - `scss/`: Source Sass files.
-  - `main.scss`: Main stylesheet that imports partials.
-  - `_config.scss`: Variables and mixins (colors, fonts, etc.).
-  - `_menu.scss`: Styling for the navigation menu and overlay.
-  - `_mobile.scss`: Media queries and responsive design overrides.
+  - `main.scss`: Main style file.
+  - `_config.scss`: Colors, typography, and mixins.
+  - `_menu.scss`: Navigation and header styles.
+  - `_mobile.scss`: Mobile responsiveness.
 
-## Development
+## Commands
 
-### Sass Compilation
-To compile the SCSS files into CSS and watch for changes, run:
-```bash
-npm run sass
-```
+- Start development server with Sass watch: `npm start`
+- Compile Sass once: `npm run build:sass`

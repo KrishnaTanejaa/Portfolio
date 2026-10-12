@@ -1,63 +1,810 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://kit.fontawesome.com/d9d82d3413.js" crossorigin="anonymous"></script>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Krishna Taneja — Engineering Student. Projects in Software Development, AI/ML Algorithms, and Hardware.">
+  <meta name="author" content="Krishna Taneja">
+  <meta property="og:title" content="Krishna Taneja — Engineering Portfolio">
+  <meta property="og:description" content="Engineering student building useful projects across software, AI, and hardware. Explore my college lab projects, algorithms, and systems.">
+  <meta property="og:type" content="website">
 
-    <title>Welcome to my Portfolio</title>
+  <title>Krishna Taneja — Engineering Portfolio | Software, AI & Hardware</title>
+
+  <!-- Stylesheets & Fonts -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d9d82d3413.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Background Blobs -->
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-    
-    <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
+  <!-- Engineered Grid Backdrop -->
+  <div class="eng-grid-bg" aria-hidden="true"></div>
+
+  <!-- Accessible Skip Link -->
+  <a href="#featured-projects" class="btn btn-primary" style="position:absolute; top:-999px; left:1rem; z-index:9999;" onfocus="this.style.top='1rem'" onblur="this.style.top='-999px'">Skip to Projects</a>
+
+  <!-- Header & Sticky Navigation -->
+  <header class="site-header" id="top">
+    <div class="header-container">
+      <a href="#top" class="brand-logo" aria-label="Krishna Taneja Home">
+        <span class="brand-badge">KT</span>
+        <span class="brand-text">
+          <span class="brand-name">Krishna Taneja</span>
+          <span class="brand-sub">Engineering Portfolio</span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#hero">Overview</a></li>
+          <li class="nav-item"><a href="#featured-projects">Featured</a></li>
+          <li class="nav-item"><a href="#additional-projects">Projects</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item"><a href="#education">Education</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="#hero">Overview</a></li>
+      <li><a href="#featured-projects">Featured Projects</a></li>
+      <li><a href="#additional-projects">Additional Projects</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Technical Skills</a></li>
+      <li><a href="#education">Education & Experience</a></li>
+      <li><a href="#contact">Contact Information</a></li>
+    </ul>
+    <div class="mobile-contact-bar">
+      <a href="mailto:krishnataneja26@gmail.com" class="btn btn-primary" style="width:100%; justify-content:center;">
+        <i class="fas fa-envelope"></i> Email Krishna
+      </a>
+      <a href="https://github.com/KrishnaTanejaa" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width:100%; justify-content:center;">
+        <i class="fab fa-github"></i> GitHub Profile
+      </a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ========================================== -->
+    <!-- 1. HERO SECTION                            -->
+    <!-- ========================================== -->
+    <section class="hero-section" id="hero" aria-label="Introduction">
+      <div class="hero-meta-badge">
+        <i class="fas fa-microchip"></i>
+        <span>ENGINEERING STUDENT &bull; SOFTWARE & HARDWARE</span>
+      </div>
+
+      <h1 class="hero-title">
+        Engineering practical solutions across <br>
+        <span class="hero-title-accent">software, AI, and hardware.</span>
+      </h1>
+
+      <p class="hero-summary">
+        I am <strong>Krishna Taneja</strong>, an engineering student. I build web applications, work with AI and search algorithms, and create hardware projects with microcontrollers. I like building practical projects that solve real problems in my college and laboratories.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#featured-projects" class="btn btn-primary">
+          <i class="fas fa-folder-open"></i> Explore My Work
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fas fa-paper-plane"></i> Get in Touch
+        </a>
+        <div class="hero-social-links">
+          <a href="https://github.com/KrishnaTanejaa" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="GitHub Profile">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/tanejakrishna" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="LinkedIn Profile">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <button type="button" class="btn-icon" data-copy-text="krishnataneja26@gmail.com" aria-label="Copy Email Address" title="Copy Email">
+            <i class="fas fa-copy"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Overview -->
+      <div class="hero-metrics">
+        <div class="metric-item">
+          <span class="metric-value">06</span>
+          <span class="metric-label">Projects</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-value">03</span>
+          <span class="metric-label">Projects for College Use</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-value">Software + Hardware</span>
+          <span class="metric-label">Areas I Work In</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-value">Real-World Projects</span>
+          <span class="metric-label">Projects Built to Solve Problems</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 2. FEATURED PROJECTS (Leading 3)           -->
+    <!-- ========================================== -->
+    <section class="section-container" id="featured-projects" aria-label="Featured Engineering Projects">
+      <div class="section-header">
+        <span class="section-eyebrow">Main Projects</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">
+          Projects I built that are either being prepared for college deployment or solve challenging problems.
+        </p>
+      </div>
+
+      <div class="featured-showcase">
+        <!-- PROJECT 1: LAB MANAGEMENT SYSTEM (Flagship) -->
+        <article class="flagship-project-card" id="project-lab-management">
+          <div class="flagship-header">
+            <div class="flagship-title-block">
+              <div class="project-order-tag">PROJECT 01 &bull; MAIN FEATURED PROJECT</div>
+              <h3 class="flagship-title">Lab Management System</h3>
+            </div>
+            <span class="status-pill status-deploying">
+              <span class="status-dot"></span>
+              Being deployed in the college lab
+            </span>
+          </div>
+
+          <div class="flagship-body">
+            <div class="flagship-details">
+              <div class="detail-block">
+                <h4>What the System Does</h4>
+                <p>
+                  A web app built to manage our college laboratory. It helps lab assistants and teachers keep track of which student is sitting at which computer, who borrowed which hardware component (like Arduino boards, sensors, or multimeters), and log broken equipment so it gets repaired.
+                </p>
+              </div>
+
+              <div class="detail-block">
+                <h4>Features I Built</h4>
+                <ul class="feature-bullets">
+                  <li><i class="fas fa-check-circle"></i> <span><strong>Student Attendance & Desks:</strong> Records student attendance and assigns them to specific computer desks in the lab.</span></li>
+                  <li><i class="fas fa-check-circle"></i> <span><strong>Hardware Inventory:</strong> Tracks who checked out components (like microcontrollers, test probes, and meters) and when they return them.</span></li>
+                  <li><i class="fas fa-check-circle"></i> <span><strong>User Roles:</strong> Separate permissions for students, lab assistants, and teachers.</span></li>
+                  <li><i class="fas fa-check-circle"></i> <span><strong>Report Broken Equipment:</strong> Lets students and staff flag broken computers or equipment so they can be fixed.</span></li>
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h4>Technologies Used</h4>
+                <div class="tech-tag-group">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">SQL Database</span>
+                  <span class="tech-tag">REST APIs</span>
+                  <span class="tech-tag">User Authentication</span>
+                  <span class="tech-tag">HTML / SCSS / JS</span>
+                  <span class="tech-tag">College Lab Network</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flagship-visuals">
+              <!-- Evolution Showcase: Earlier vs Present -->
+              <div class="evolution-container">
+                <div class="evolution-title">
+                  <i class="fas fa-code-branch"></i> How the Project Grew
+                </div>
+                <div class="evolution-stages">
+                  <div class="stage-card stage-early">
+                    <div class="stage-label">EARLIER VERSION</div>
+                    <p>
+                      Started as a simple desktop script and basic spreadsheet-style table to keep an inventory list on a single computer.
+                    </p>
+                  </div>
+                  <div class="stage-card stage-present">
+                    <div class="stage-label">PRESENT VERSION</div>
+                    <p>
+                      Upgraded into a full web app with user logins, role permissions, a shared database, and network setup for our college lab.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- System Architecture Block -->
+              <div class="architecture-diagram-card">
+                <div class="diagram-header">
+                  <span>How the System Works</span>
+                  <span class="tech-tag">Live Testing</span>
+                </div>
+                <svg viewBox="0 0 460 170" width="100%" height="auto" style="border-radius:6px; background:#070a10; border:1px solid #1a2436;" aria-label="Lab Management System Architecture">
+                  <rect x="20" y="25" width="100" height="42" rx="5" fill="#0f172a" stroke="#00e5ff" stroke-width="1.2"/>
+                  <text x="70" y="50" fill="#f8fafc" font-size="10" font-family="'JetBrains Mono', monospace" text-anchor="middle" font-weight="600">Web Interface</text>
+                  
+                  <path d="M 120 46 L 160 46" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="3,3" />
+                  
+                  <rect x="160" y="25" width="130" height="42" rx="5" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+                  <text x="225" y="45" fill="#f8fafc" font-size="10" font-family="'JetBrains Mono', monospace" text-anchor="middle" font-weight="600">Backend Logic</text>
+                  <text x="225" y="58" fill="#94a3b8" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle">Logins & Roles</text>
+                  
+                  <path d="M 290 46 L 330 46" stroke="#38bdf8" stroke-width="1.5" />
+                  
+                  <rect x="330" y="25" width="110" height="42" rx="5" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+                  <text x="385" y="45" fill="#f8fafc" font-size="10" font-family="'JetBrains Mono', monospace" text-anchor="middle" font-weight="600">SQL Database</text>
+                  <text x="385" y="58" fill="#10b981" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle">Records & Logs</text>
+
+                  <rect x="20" y="100" width="420" height="48" rx="5" fill="#0b1220" stroke="#1e293b" stroke-width="1"/>
+                  <circle cx="45" cy="124" r="5" fill="#10b981" />
+                  <text x="60" y="128" fill="#f8fafc" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="600">College Lab Network Environment</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="flagship-footer">
+            <span style="font-size:0.85rem; color:#94a3b8;">
+              <i class="fas fa-university" style="color:#00e5ff; margin-right:0.4rem;"></i>
+              Currently being tested and deployed in our college laboratory
+            </span>
+            <button type="button" class="btn btn-outline" data-project-modal="lab-management">
+              <i class="fas fa-file-alt"></i> View Full Project Details
+            </button>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 & 3 DUO -->
+        <div class="featured-grid-duo">
+          <!-- PROJECT 2: MEGATRON -->
+          <article class="project-card" id="project-megatron">
+            <div class="card-header-bar">
+              <div>
+                <span class="project-index">PROJECT 02 // AUTOMATION</span>
+                <h3 class="project-card-title">Megatron</h3>
+              </div>
+              <span class="status-pill status-prep">
+                <span class="status-dot"></span>
+                Being prepared for college deployment
+              </span>
+            </div>
+
+            <div class="card-body">
+              <p class="project-desc">
+                An automation tool built to run background tasks and monitor computer systems in our college labs. It runs scheduled maintenance scripts and checks if background programs are running properly, logging errors automatically to make diagnosing issues straightforward.
+              </p>
+
+              <div class="tech-tag-group">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Automation</span>
+                <span class="tech-tag">Async Tasks</span>
+                <span class="tech-tag">System Monitoring</span>
+                <span class="tech-tag">Error Logging</span>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <span>Testing &bull; College Deployment</span>
+              <button type="button" class="btn btn-outline" data-project-modal="megatron">
+                <i class="fas fa-info-circle"></i> Project Details
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: TIMETABLE SCHEDULER USING DFS -->
+          <article class="project-card" id="project-timetable-scheduler">
+            <div class="card-header-bar">
+              <div>
+                <span class="project-index">PROJECT 03 // AI / ML PROJECT</span>
+                <h3 class="project-card-title">Timetable Scheduler Using DFS</h3>
+              </div>
+              <span class="status-pill status-planned">
+                <span class="status-dot"></span>
+                College deployment being planned
+              </span>
+            </div>
+
+            <div class="card-body">
+              <p class="project-desc">
+                My AI/ML subject project that uses Depth-First Search (DFS) with backtracking to generate clash-free college class timetables. It assigns classes step by step, and if a clash occurs with teacher schedules or room sizes, it backtracks and tries another slot until a valid timetable is found.
+              </p>
+
+              <div class="tech-tag-group">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Depth-First Search (DFS)</span>
+                <span class="tech-tag">Backtracking</span>
+                <span class="tech-tag">Constraint Solving</span>
+                <span class="tech-tag">AI/ML Subject</span>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <span>Academic Subject &bull; Planning Deployment</span>
+              <button type="button" class="btn btn-outline" data-project-modal="timetable-scheduler">
+                <i class="fas fa-info-circle"></i> Algorithm Details
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 3. ADDITIONAL ENGINEERING PROJECTS         -->
+    <!-- ========================================== -->
+    <section class="section-container" id="additional-projects" aria-label="Additional Engineering Projects">
+      <div class="section-header">
+        <span class="section-eyebrow">More Projects</span>
+        <h2 class="section-title">Additional Engineering Projects</h2>
+        <p class="section-subtitle">
+          Web projects, hardware and microcontroller builds, and projects currently in development.
+        </p>
+      </div>
+
+      <div class="secondary-projects-grid">
+        <!-- PROJECT 4: SPIE / WEB SYSTEMS -->
+        <article class="compact-project-card" id="project-spie">
+          <div class="compact-header">
+            <span class="compact-number">PROJECT 04</span>
+            <span class="status-pill status-systems">
+              <span class="status-dot"></span>
+              Web Systems
+            </span>
+          </div>
+          <h3 class="compact-title">SPIE / Web Systems</h3>
+          <p class="compact-desc">
+            A web project focused on building clean web pages with reliable backend communication. I built the responsive user interface and connected it to backend endpoints for handling user requests and saving data.
+          </p>
+          <div class="compact-tech">
+            <div class="tech-tag-group">
+              <span class="tech-tag">Web Development</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">SCSS</span>
+              <span class="tech-tag">Backend APIs</span>
+            </div>
+            <button type="button" class="btn btn-outline" style="width:100%; margin-top:0.75rem;" data-project-modal="spie-web-systems">
+              View Details
+            </button>
+          </div>
+        </article>
+
+        <!-- PROJECT 5: HARDWARE ENGINEERING PROJECTS -->
+        <article class="compact-project-card" id="project-hardware">
+          <div class="compact-header">
+            <span class="compact-number">PROJECT 05</span>
+            <span class="status-pill status-hardware">
+              <span class="status-dot"></span>
+              Hardware & Embedded
+            </span>
+          </div>
+          <h3 class="compact-title">Hardware Engineering Projects</h3>
+          <p class="compact-desc">
+            Hands-on electronics projects using microcontrollers like Arduino and ESP boards. I write firmware in C and C++, wire sensors on breadboards, communicate using UART, I2C, and SPI protocols, and test circuits with multimeters and oscilloscopes.
+          </p>
+          <div class="compact-tech">
+            <div class="tech-tag-group">
+              <span class="tech-tag">Embedded C/C++</span>
+              <span class="tech-tag">Microcontrollers</span>
+              <span class="tech-tag">UART / I2C / SPI</span>
+              <span class="tech-tag">Circuit Wiring</span>
+            </div>
+            <button type="button" class="btn btn-outline" style="width:100%; margin-top:0.75rem;" data-project-modal="hardware-engineering">
+              View Hardware Details
+            </button>
+          </div>
+        </article>
+
+        <!-- PROJECT 6: FLOWOPS -->
+        <article class="compact-project-card" id="project-flowops">
+          <div class="compact-header">
+            <span class="compact-number">PROJECT 06</span>
+            <span class="status-pill status-dev">
+              <span class="status-dot"></span>
+              In Development
+            </span>
+          </div>
+          <h3 class="compact-title">FlowOps</h3>
+          <p class="compact-desc">
+            An ongoing project to build a step-by-step task runner that automates everyday technical workflows. I built the core runner that executes tasks in order and logs errors; adding multi-computer support and a web dashboard is next.
+          </p>
+          <div class="compact-tech">
+            <div class="tech-tag-group">
+              <span class="tech-tag">Task Runner</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">In Development</span>
+            </div>
+            <button type="button" class="btn btn-outline" style="width:100%; margin-top:0.75rem;" data-project-modal="flowops">
+              View Progress & Roadmap
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. ABOUT ME SECTION                        -->
+    <!-- ========================================== -->
+    <section class="section-container" id="about" aria-label="About Krishna Taneja">
+      <div class="section-header">
+        <span class="section-eyebrow">About Me</span>
+        <h2 class="section-title">A Bit About Me</h2>
+        <p class="section-subtitle">
+          An engineering student who enjoys building software, working with algorithms, and connecting microcontrollers to the real world.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-narrative">
+          <p>
+            I am <strong>Krishna Taneja</strong>, an engineering student. I like writing code, learning how systems work under the hood, and building projects that people can actually use. Whether that is helping our college lab manage equipment and attendance, writing search algorithms for timetable scheduling, or building circuits with microcontrollers, I focus on building things that work reliably.
+          </p>
+          <p>
+            I work across both <strong>software and hardware</strong>. On the software side, I build web applications and work with Python, algorithms, and databases. On the hardware side, I write embedded C/C++ code for microcontrollers, wire circuits on breadboards, and connect sensors using serial communication protocols.
+          </p>
+          <p>
+            Right now, I am focusing on deploying my <em>Lab Management System</em> in our college laboratory, testing my <em>Megatron</em> automation project, and practicing algorithmic problem-solving.
+          </p>
         </div>
 
-        <nav class="menu">
-            <div class="menu-branding">
-                <div class="portrait"></div>
+        <div class="about-focus-panel">
+          <div class="focus-card">
+            <div class="focus-icon"><i class="fas fa-server"></i></div>
+            <div class="focus-text">
+              <h4>Web & Software Development</h4>
+              <p>Building responsive web pages, writing backend logic in Python, and designing SQL databases.</p>
             </div>
-            <ul class="menu-nav">
-                <li class="nav-item current">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a href="work.html" class="nav-link">My Work</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">How to reach me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main id="home">
-        <div class="glass-panel">
-            <h1 class="lg-heading">
-                Your <span class="text-secondary">Name</span> 
-            </h1>
-            <h2 class="sm-heading">
-                Full Stack Developer & UI Designer
-            </h2>
-            <div class="icons">
-                <a href="#!"><i class="fab fa-twitter"></i></a>
-                <a href="#!"><i class="fab fa-linkedin"></i></a>
-                <a href="#!"><i class="fab fa-github"></i></a>
-                <a href="#!"><i class="fab fa-instagram"></i></a>
+          </div>
+
+          <div class="focus-card">
+            <div class="focus-icon"><i class="fas fa-brain"></i></div>
+            <div class="focus-text">
+              <h4>AI & Search Algorithms</h4>
+              <p>Using Depth-First Search (DFS) and backtracking to solve timetable scheduling and constraint problems.</p>
             </div>
+          </div>
+
+          <div class="focus-card">
+            <div class="focus-icon"><i class="fas fa-microchip"></i></div>
+            <div class="focus-text">
+              <h4>Hardware & Electronics</h4>
+              <p>Writing microcontroller code in C/C++, wiring sensors, and communicating over UART, I2C, and SPI.</p>
+            </div>
+          </div>
         </div>
-    </main>
-    <script src="js/main.js"></script>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 5. TECHNICAL SKILLS SECTION (6 Categories) -->
+    <!-- ========================================== -->
+    <section class="section-container" id="skills" aria-label="Technical Skills">
+      <div class="section-header">
+        <span class="section-eyebrow">What I Use</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">
+          Technologies and tools I have used in my coursework, lab work, and personal projects.
+        </p>
+      </div>
+
+      <div class="skills-categories-grid">
+        <!-- 1. Programming Languages -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-code"></i></div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">C / C++</span>
+            <span class="skill-pill">JavaScript (ES6+)</span>
+            <span class="skill-pill">HTML5</span>
+            <span class="skill-pill">CSS3 / SCSS</span>
+            <span class="skill-pill">SQL</span>
+          </div>
+          <div class="category-context">
+            Languages I use for writing scripts, building web pages, solving algorithm problems, and programming microcontrollers.
+          </div>
+        </div>
+
+        <!-- 2. Software & Web Development -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Software & Web Development</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Web Applications</span>
+            <span class="skill-pill">Responsive Design</span>
+            <span class="skill-pill">REST APIs</span>
+            <span class="skill-pill">Modular SCSS</span>
+            <span class="skill-pill">DOM APIs</span>
+            <span class="skill-pill">Client-Server Calls</span>
+          </div>
+          <div class="category-context">
+            Building clean interfaces that work well on both phones and laptops, and connecting them to backend services.
+          </div>
+        </div>
+
+        <!-- 3. AI/ML & Algorithms -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-network-wired"></i></div>
+            <h3>AI/ML & Algorithms</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Depth-First Search (DFS)</span>
+            <span class="skill-pill">Backtracking Search</span>
+            <span class="skill-pill">Graph Search</span>
+            <span class="skill-pill">Constraint Problems</span>
+            <span class="skill-pill">Basic Machine Learning</span>
+          </div>
+          <div class="category-context">
+            Used in my AI/ML subject project to generate clash-free college timetables.
+          </div>
+        </div>
+
+        <!-- 4. Databases & Backend Development -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-database"></i></div>
+            <h3>Databases & Backend Development</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">SQL Databases</span>
+            <span class="skill-pill">CRUD Operations</span>
+            <span class="skill-pill">User Logins & Roles</span>
+            <span class="skill-pill">Session Handling</span>
+            <span class="skill-pill">Activity Logs</span>
+            <span class="skill-pill">Data Storage</span>
+          </div>
+          <div class="category-context">
+            Storing student attendance, equipment inventories, and user permissions in my lab project.
+          </div>
+        </div>
+
+        <!-- 5. Hardware & Embedded Systems -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-microchip"></i></div>
+            <h3>Hardware & Embedded Systems</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Embedded C / C++</span>
+            <span class="skill-pill">Arduino & ESP Boards</span>
+            <span class="skill-pill">UART Serial</span>
+            <span class="skill-pill">I2C Protocol</span>
+            <span class="skill-pill">SPI Protocol</span>
+            <span class="skill-pill">Sensors & Breadboards</span>
+          </div>
+          <div class="category-context">
+            My hardware track: wiring circuits, reading sensor data, and testing communication over serial wires.
+          </div>
+        </div>
+
+        <!-- 6. Engineering Tools & Platforms -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-tools"></i></div>
+            <h3>Engineering Tools & Platforms</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Git & GitHub</span>
+            <span class="skill-pill">VS Code</span>
+            <span class="skill-pill">Dart Sass</span>
+            <span class="skill-pill">Terminal & Shell</span>
+            <span class="skill-pill">Multimeters & Scopes</span>
+            <span class="skill-pill">npm</span>
+          </div>
+          <div class="category-context">
+            Everyday tools I use for writing code, version control, testing circuits, and compiling styles.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 6. EDUCATION & EXPERIENCE                  -->
+    <!-- ========================================== -->
+    <section class="section-container" id="education" aria-label="Education and Experience">
+      <div class="section-header">
+        <span class="section-eyebrow">My Background</span>
+        <h2 class="section-title">Education & Experience</h2>
+        <p class="section-subtitle">
+          My college studies, coursework projects, and practical engineering work.
+        </p>
+      </div>
+
+      <div class="timeline-grid">
+        <!-- Academic Background -->
+        <div class="timeline-column">
+          <h3 class="timeline-col-title">
+            <i class="fas fa-graduation-cap"></i> College Studies
+          </h3>
+
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-badge">DEGREE</span>
+              <span class="timeline-date">Current Student</span>
+            </div>
+            <h4 class="timeline-title">B.Sc. (Hons.) Electronics</h4>
+            <div class="timeline-sub">Engineering Student</div>
+            <p class="timeline-desc">
+              Studying core subjects including Data Structures & Algorithms, Artificial Intelligence, Operating Systems, Database Management Systems, Computer Networks, and Embedded Systems.
+            </p>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-badge">AI/ML SUBJECT</span>
+              <span class="timeline-date">Coursework Project</span>
+            </div>
+            <h4 class="timeline-title">AI & Search Algorithms Project</h4>
+            <div class="timeline-sub">Subject Project Implementation</div>
+            <p class="timeline-desc">
+              Applied search algorithms from class to build the <em>DFS-based Timetable Scheduler</em>, which we are now planning to adapt for our college department.
+            </p>
+          </div>
+        </div>
+
+        <!-- Practical Engineering Experience -->
+        <div class="timeline-column">
+          <h3 class="timeline-col-title">
+            <i class="fas fa-briefcase"></i> Practical Work & Projects
+          </h3>
+
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-badge" style="color:#10b981;">COLLEGE PROJECT</span>
+              <span class="timeline-date">Active Work</span>
+            </div>
+            <h4 class="timeline-title">Lab Management System</h4>
+            <div class="timeline-sub">College Laboratory Tool</div>
+            <p class="timeline-desc">
+              Building and setting up the <em>Lab Management System</em> to help manage student attendance, lab computer assignments, and equipment checkout in our college lab.
+            </p>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-badge" style="color:#06b6d4;">COLLEGE TOOL</span>
+              <span class="timeline-date">In Preparation</span>
+            </div>
+            <h4 class="timeline-title">Megatron Automation Tool</h4>
+            <div class="timeline-sub">Lab Automation Scripts</div>
+            <p class="timeline-desc">
+              Writing background automation and health-check scripts in Python, getting it ready for deployment on college lab machines.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 7. CONTACT SECTION (Verified Only)         -->
+    <!-- ========================================== -->
+    <section class="section-container" id="contact" aria-label="Contact Information">
+      <div class="contact-container">
+        <div class="contact-intro">
+          <span class="section-eyebrow" style="margin-bottom:0.25rem;">Get In Touch</span>
+          <h2 class="contact-heading">Let's Connect.</h2>
+          <p>
+            I am an engineering student actively looking for <strong>internships</strong> and <strong>entry-level engineering roles</strong>. Feel free to reach out if you'd like to talk about my projects or opportunities on your team.
+          </p>
+
+          <div class="contact-status-note">
+            <i class="fas fa-check-circle"></i>
+            <span><strong>Status:</strong> Available for internships and engineering roles.</span>
+          </div>
+        </div>
+
+        <div class="contact-channels">
+          <!-- Verified Email -->
+          <div class="channel-item">
+            <div class="channel-info">
+              <div class="channel-icon"><i class="fas fa-envelope"></i></div>
+              <div class="channel-text">
+                <div class="channel-label">Email</div>
+                <div class="channel-val">krishnataneja26@gmail.com</div>
+              </div>
+            </div>
+            <div class="channel-action">
+              <button type="button" class="btn btn-primary" data-copy-text="krishnataneja26@gmail.com" title="Copy Email Address">
+                <i class="fas fa-copy"></i> Copy
+              </button>
+            </div>
+          </div>
+
+          <!-- Verified GitHub -->
+          <div class="channel-item">
+            <div class="channel-info">
+              <div class="channel-icon"><i class="fab fa-github"></i></div>
+              <div class="channel-text">
+                <div class="channel-label">GitHub</div>
+                <div class="channel-val">github.com/KrishnaTanejaa</div>
+              </div>
+            </div>
+            <div class="channel-action">
+              <a href="https://github.com/KrishnaTanejaa" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="fas fa-external-link-alt"></i> Visit
+              </a>
+            </div>
+          </div>
+
+          <!-- Verified LinkedIn -->
+          <div class="channel-item">
+            <div class="channel-info">
+              <div class="channel-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="channel-text">
+                <div class="channel-label">LinkedIn</div>
+                <div class="channel-val">linkedin.com/in/tanejakrishna</div>
+              </div>
+            </div>
+            <div class="channel-action">
+              <a href="https://www.linkedin.com/in/tanejakrishna" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="fas fa-external-link-alt"></i> Connect
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================== -->
+  <!-- 8. FOOTER                                  -->
+  <!-- ========================================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">Krishna Taneja &bull; Engineering Portfolio</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#featured-projects">Featured Work</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/KrishnaTanejaa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+
+      <button type="button" class="btn-scroll-top" aria-label="Scroll to top of page" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- CASE STUDY MODAL DIALOG                    -->
+  <!-- ========================================== -->
+  <div class="case-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="case-modal-dialog">
+      <div class="case-modal-header">
+        <div class="modal-title-group">
+          <div class="modal-eyebrow">PROJECT DETAILS</div>
+          <h3 class="modal-title" id="modal-project-title">Project Title</h3>
+          <div class="modal-status-container" style="margin-top:0.4rem;"></div>
+        </div>
+        <button type="button" class="btn-close-modal" aria-label="Close Project Details">&times;</button>
+      </div>
+
+      <div class="case-modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <div class="case-modal-footer">
+        <span style="font-size:0.8rem; color:#64748b; font-family:'JetBrains Mono', monospace;">
+          Krishna Taneja &bull; Portfolio
+        </span>
+        <button type="button" class="btn btn-secondary btn-modal-close-footer">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" role="status" aria-live="polite">
+    <i class="fas fa-check-circle" style="color:#00e5ff;"></i>
+    <span class="toast-msg">Text copied to clipboard</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
 </body>
 </html>

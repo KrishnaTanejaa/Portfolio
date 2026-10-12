@@ -4,12 +4,22 @@
   "description": "Responsive Portfolio Website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "start": "concurrently \"npm run watch:sass\" \"npm run serve\"",
+    "dev": "concurrently \"npm run watch:sass\" \"npm run serve\"",
+    "build:sass": "sass scss:dist/css",
+    "watch:sass": "sass scss:dist/css --watch",
+    "sass": "sass scss:dist/css --watch",
+    "serve": "live-server dist",
+    "deploy": "npm run build:sass && gh-pages -d dist"
   },
   "author": "Krishna Taneja",
   "license": "ISC",
   "dependencies": {
-    "gh-pages": "^6.3.0",
-    "node-sass": "^9.0.0"
+    "gh-pages": "^6.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6",
+    "live-server": "^1.2.2",
+    "sass": "^1.105.1"
   }
 }

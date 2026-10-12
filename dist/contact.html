@@ -1,78 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://kit.fontawesome.com/d9d82d3413.js" crossorigin="anonymous"></script>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Krishna Taneja — Engineering Student. Email, GitHub, and LinkedIn.">
+  <title>Contact — Krishna Taneja</title>
 
-    <title>Contact Me</title>
+  <!-- Stylesheets & Fonts -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d9d82d3413.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Background Blobs -->
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
+  <div class="eng-grid-bg" aria-hidden="true"></div>
 
-    <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" aria-label="Krishna Taneja Home">
+        <span class="brand-badge">KT</span>
+        <span class="brand-text">
+          <span class="brand-name">Krishna Taneja</span>
+          <span class="brand-sub">Engineering Portfolio</span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html#hero">Overview</a></li>
+          <li class="nav-item"><a href="index.html#featured-projects">Featured</a></li>
+          <li class="nav-item"><a href="work.html">All Projects</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="index.html#skills">Skills</a></li>
+          <li class="nav-item"><a href="index.html#education">Education</a></li>
+          <li class="nav-item"><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="mailto:krishnataneja26@gmail.com" class="btn-contact-header">
+          <i class="fas fa-paper-plane"></i> Email Direct
+        </a>
+        <button class="mobile-toggle" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html#hero">Overview</a></li>
+      <li><a href="work.html">All Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="index.html#skills">Technical Skills</a></li>
+      <li><a href="index.html#education">Education & Experience</a></li>
+      <li><a href="contact.html" class="active">Contact Information</a></li>
+    </ul>
+  </div>
+
+  <main id="main-content">
+    <div class="section-container" style="padding-top: 3.5rem;">
+      <div class="section-header">
+        <span class="section-eyebrow">Get in Touch</span>
+        <h1 class="section-title">Contact Me</h1>
+        <p class="section-subtitle">
+          Feel free to reach out if you'd like to discuss an internship, a project, or an engineering role.
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-intro">
+          <h2 class="contact-heading">Krishna Taneja</h2>
+          <p>
+            I am an engineering student actively looking for <strong>software engineering internships</strong> and <strong>entry-level engineering roles</strong>. I'm always happy to talk about my projects or hear about opportunities on your team.
+          </p>
+
+          <div class="contact-status-note">
+            <i class="fas fa-check-circle"></i>
+            <span><strong>Status:</strong> Open to internships and entry-level engineering roles.</span>
+          </div>
         </div>
 
-        <nav class="menu">
-            <div class="menu-branding">
-                <div class="portrait"></div>
+        <div class="contact-channels">
+          <!-- Verified Email -->
+          <div class="channel-item">
+            <div class="channel-info">
+              <div class="channel-icon"><i class="fas fa-envelope"></i></div>
+              <div class="channel-text">
+                <div class="channel-label">Email</div>
+                <div class="channel-val">krishnataneja26@gmail.com</div>
+              </div>
             </div>
-            <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a href="work.html" class="nav-link">My Work</a>
-                </li>
-                <li class="nav-item current">
-                    <a href="contact.html" class="nav-link">How to reach me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main id="contact">
-        <div class="glass-panel" style="padding: 2rem;">
-            <h1 class="lg-heading">
-                Contact <span class="text-secondary"> Me</span> 
-            </h1>
-            <h2 class="sm-heading">
-                Let's Build Something Amazing Together
-            </h2>
-        </div>
-        <div class="boxes">
-            <div>
-                <i class="fas fa-envelope"></i>
-                <span>Email</span>
-                <p>hello@yourportfolio.com</p>
+            <div class="channel-action">
+              <button type="button" class="btn btn-primary" data-copy-text="krishnataneja26@gmail.com" title="Copy Email">
+                <i class="fas fa-copy"></i> Copy
+              </button>
             </div>
-            <div>
-                <i class="fas fa-mobile-alt"></i>
-                <span>Phone</span>
-                <p>+1 (555) 123-4567</p>
-            </div>
-            <div>
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Location</span>
-                <p>San Francisco, CA</p>
-            </div>
-        </div>
-    </main>
+          </div>
 
-    <footer id="main-footer">
-        Copyright &copy; 2026
-    </footer>
-    <script src="js/main.js"></script>
+          <!-- Verified GitHub -->
+          <div class="channel-item">
+            <div class="channel-info">
+              <div class="channel-icon"><i class="fab fa-github"></i></div>
+              <div class="channel-text">
+                <div class="channel-label">GitHub</div>
+                <div class="channel-val">github.com/KrishnaTanejaa</div>
+              </div>
+            </div>
+            <div class="channel-action">
+              <a href="https://github.com/KrishnaTanejaa" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="fas fa-external-link-alt"></i> Visit
+              </a>
+            </div>
+          </div>
+
+          <!-- Verified LinkedIn -->
+          <div class="channel-item">
+            <div class="channel-info">
+              <div class="channel-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="channel-text">
+                <div class="channel-label">LinkedIn</div>
+                <div class="channel-val">linkedin.com/in/tanejakrishna</div>
+              </div>
+            </div>
+            <div class="channel-action">
+              <a href="https://www.linkedin.com/in/tanejakrishna" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="fas fa-external-link-alt"></i> Connect
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">Krishna Taneja &bull; Engineering Portfolio</span>
+        <span class="footer-copy">All contact channels verified.</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Overview</a>
+        <a href="work.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="https://github.com/KrishnaTanejaa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <button type="button" class="btn-scroll-top" aria-label="Scroll to top of page" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Toast Notice -->
+  <div class="toast-notice" role="status" aria-live="polite">
+    <i class="fas fa-check-circle" style="color:#00e5ff;"></i>
+    <span class="toast-msg">Email copied to clipboard</span>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

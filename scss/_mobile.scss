@@ -1,84 +1,142 @@
-// Widescreens
-@include mediaXl {
-    .projects {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
+// ==========================================
+// RESPONSIVE OVERRIDES & ACCESSIBILITY
+// ==========================================
 
-//Desktops and Laptops
-@include mediaLg {
-    .projects {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+@use 'config' as *;
 
-//Tablets and Small Laptops
+// Tablet & Mobile Adjustments
 @include mediaMd {
-    main {
-        align-items: center;
-        text-align: center;
+  .hero-section {
+    padding: 3.5rem 1.25rem 2.5rem;
 
-        .lg-heading {
-            line-height: 1;
-            margin-bottom: 1rem;
-        }
+    .hero-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
     }
 
-    ul.menu-nav,
-    div.menu-branding {
-        float: none;
-        width: 100%;
-        min-height: 0;
-
-        &.show {
-            transform: translate3d(0, 0, 0);
-        }
+    .hero-title {
+      font-size: 2.25rem;
     }
 
-    .menu-nav {
-        height: 75vh;
-        transform: translate3d(-100%, 0, 0);
-        font-size: 24px;
+    .hero-summary {
+      font-size: 1rem;
     }
 
-    .menu-branding {
-        height: 25vh;
-        transform: translate3d(100%, 0, 0);
-
-        .portrait {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
+    .hero-actions {
+      flex-wrap: wrap;
     }
+  }
 
-    .about-info {
-        grid-template-areas: 
-        'bioimage'
-        'bio'
-        'job1'
-        'job2'
-        'job3';
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
 
-        grid-template-columns: 1fr;
+  .secondary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-container {
+    padding: 1rem;
+
+    .modal-content {
+      max-height: 90vh;
+      padding: 1.5rem;
     }
-
-    main#about {
-        padding-left: 42px;
-    }
-
-    .projects {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  }
 }
 
-//Smartphones
+// Small Mobile Devices
 @include mediaSm {
-    main#home h1 {
-        margin-top: 10vh;
+  .site-header .header-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .hero-section {
+    padding: 2.5rem 1rem 2rem;
+
+    .hero-title {
+      font-size: 1.85rem;
     }
 
-    .projects {
-        grid-template-columns: 1fr;
+    .hero-meta-badge {
+      font-size: 0.72rem;
     }
+
+    .hero-metrics {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+  }
+
+  .section-container {
+    padding: 3rem 1rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+
+    .section-title {
+      font-size: 1.75rem;
+    }
+  }
+
+  .project-card {
+    padding: 1.25rem;
+  }
+
+  .case-study-hero {
+    .evolution-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .contact-card {
+    padding: 1.25rem;
+  }
+}
+
+// Reduced Motion Accessibility
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// High Contrast / Print Styles
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .site-header,
+  .mobile-drawer,
+  .btn-contact,
+  .modal-overlay {
+    display: none !important;
+  }
+
+  .project-card,
+  .skill-category-card,
+  .edu-card {
+    border: 1px solid #ccc !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
 }
